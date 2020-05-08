@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Me Sevices</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <img src="Logo.png">
+    </div>
+    <div class="btn">
+        <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+        <div class="text">Book Me</div>
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li>
+                <a href="#" class="feat-btn">Tourist Spots
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="feat-show">
+                    <li><a href="Bohol.html">Bohol</a></li>
+                    <li><a href="baguio.html">Baguio</a></li>
+                    <li><a href="palawan.html">Palawan</a></li>
+                    <li><a href="cebu.html">Cebu</a></li>
+                    <li><a href="tagaytay.html">Tagaytay</a></li>
+                    <li><a href="iloilo.html">Iloilo</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="serv-btn">Services
+                    <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="serv-show">
+                    <li><a href="#">Transportation</a></li>
+                    <li><a href="#">Food Branches</a></li>
+                </ul>
+            </li>
+            <li> <a href="booking.html">Booking Overview</a></li>
+            <li> <a href="#">Payment Methods</a></li>
+            <li> <a href="contact.html">Feedback</a></li>
+        </ul>
+        </div>
+    </nav>
+    <script>
+       $('.btn').click(function(){
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+       });
+        $('.feat-btn').click(function(){
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function(){
+            $('nav ul .serv-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+    <div> <div class="welcome-text">
+        <h1>Fill Your Life With Adventures</h1>
+    </div>
+    </header>
+</body>
+</html>

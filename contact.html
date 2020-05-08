@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $(".input, .text-area").val("");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="contact-us">
+            <div class="title">Any suggestions?</div>
+
+            <div class="input-fields">
+                <div class="items">
+                    <label for="name" class="label">Name</label>
+                    <input id="name" type="text" class="input">
+                </div>
+                <div class="items">
+                    <label for="email" class="label">Email</label>
+                    <input id="email" type="text" class="input">
+                </div>
+                <div class="items">
+                    <label for="subject" class="label">Subject</label>
+                    <input id="subject" type="text" class="input">
+                </div>
+                <div class="items">
+                    <label for="msg" class="label">Message</label>
+                    <textarea id="msg" class="text-area"></textarea>
+                </div>
+            </div>
+
+            <div class="btn">Send</div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="btn">
+          <a href="index.html"><button type="button">Home</button></a>
+        </div>
+    </div>
+</body>
+</html>
